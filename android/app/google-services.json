@@ -1,0 +1,117 @@
+{
+  "project_info": {
+    "project_number": "214430050963",
+    "firebase_url": "https://stockadvisory-f4983.firebaseio.com",
+    "project_id": "stockadvisory-f4983",
+    "storage_bucket": "stockadvisory-f4983.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214430050963:android:31ea05ee52f9bc8437fb66",
+        "android_client_info": {
+          "package_name": "com.createwealth.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214430050963-5qgjfg5b6nvn1rc750imsrgnu07ght1o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.createwealth.admin",
+            "certificate_hash": "b5ae848e7a18956707c4012963e2bed52fd6323d"
+          }
+        },
+        {
+          "client_id": "214430050963-as1i9fsu3u923ujd7fohv673h0p6v9rm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.createwealth.admin",
+            "certificate_hash": "d699939430d1e24801d42f18e388b4bbacbdb23c"
+          }
+        },
+        {
+          "client_id": "214430050963-buqbjt1qmbnva2ktbho71mc5opr84upn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.createwealth.admin",
+            "certificate_hash": "3d951e3e73014f2c4abb5c28fb3d95eb45e5ba85"
+          }
+        },
+        {
+          "client_id": "214430050963-1eo5rdf3sl1n765lv392dpcqmbhglf4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtjV3KEtNlUbQWf-pW1EXr6uXWEA7RRfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214430050963-1eo5rdf3sl1n765lv392dpcqmbhglf4q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214430050963:android:be00a554fdb9f4d037fb66",
+        "android_client_info": {
+          "package_name": "com.createwealth.trader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214430050963-gmjo0qr147ui94eik9u5hdkdikc699m9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.createwealth.trader",
+            "certificate_hash": "d699939430d1e24801d42f18e388b4bbacbdb23c"
+          }
+        },
+        {
+          "client_id": "214430050963-hccdce3nr88uuptsfr53mudqmkhmifnu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.createwealth.trader",
+            "certificate_hash": "5f3d1d54cbe7daf86a715b0292069e6cc987240d"
+          }
+        },
+        {
+          "client_id": "214430050963-hmncfd6lpvf6loao1n9s00b44bqsviiq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.createwealth.trader",
+            "certificate_hash": "6c529ceabd6c33a3da86c092144a89875999d035"
+          }
+        },
+        {
+          "client_id": "214430050963-1eo5rdf3sl1n765lv392dpcqmbhglf4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtjV3KEtNlUbQWf-pW1EXr6uXWEA7RRfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214430050963-1eo5rdf3sl1n765lv392dpcqmbhglf4q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="A new Flutter project.">
+
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id"
+          content="214430050963-oc2f9oofq16ker8h6t4k85g7ut7b9ccb.apps.googleusercontent.com">
+
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="trader">
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png"/>
+
+    <title>trader</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<!-- This script installs service_worker.js to provide PWA functionality to
+     application. For more information, see:
+     https://developers.google.com/web/fundamentals/primers/service-workers -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-messaging.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZuin_bGxsEkers-xP7heOt8uHZqjdq5c",
+    authDomain: "stockadvisory-f4983.firebaseapp.com",
+    databaseURL: "https://stockadvisory-f4983.firebaseio.com",
+    projectId: "stockadvisory-f4983",
+    storageBucket: "stockadvisory-f4983.appspot.com",
+    messagingSenderId: "214430050963",
+    appId: "1:214430050963:web:63203f43e0eb9ca037fb66",
+    measurementId: "G-YGTM6CRT6C"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const messaging = firebase.messaging();
+
+  NotificationSettings settings = await messaging.requestPermission(
+  alert: true,
+  announcement: false,
+  badge: true,
+  carPlay: false,
+  criticalAlert: false,
+  provisional: false,
+  sound: true,
+);
+
+  // Get registration token. Initially this makes a network call, once retrieved
+// subsequent calls to getToken will return from cache.
+    messaging.getToken({ vapidKey: 'BPUlAzuGu7QI6VGieD3p3BgWEQMCZiMLZ2d27w2Ak8oFNc3DeFtlbX7e3jchYiqvubiRlqArjRZbTcrGS18GV1Q' }).then((currentToken) => {
+    if (currentToken) {
+    // Send the token to your server and update the UI if necessary
+    // ...
+    } else {
+    // Show permission request UI
+    console.log('No registration token available. Request permission to generate one.');
+    // ...
+    }
+    }).catch((err) => {
+    console.log('An error occurred while retrieving token. ', err);
+  // ...
+    });
+
+
+</script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+
+
+</script>
+<script src="main.dart.js" type="application/javascript"></script>
+
+</body>
+</html>
